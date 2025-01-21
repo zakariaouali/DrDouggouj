@@ -1,0 +1,80 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 20px 50px;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    flex-basis: 30%; /* Ensures responsiveness */
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 30%; /* Ensures responsiveness */
+}
+
+.social-media .logo img {
+    width: 300px; /* Adjusted for better responsiveness */
+}
+
+.social-media .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media .icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+}
+
+.social-media .icons a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    filter: brightness(1.1); /* Slight color change on hover */
+}
+
+.developer-credit {
+    text-align: right;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    line-height: 1.5;
+    flex-basis: 30%; /* Ensures responsiveness */
+}
+
+/* Optional mobile responsiveness for better layout */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px;
+        flex-direction: column; /* Stack items on small screens */
+        text-align: center;
+    }
+
+    .contact-info, .social-media, .developer-credit {
+        flex-basis: 100%; /* Full width for each item */
+        margin-bottom: 20px;
+    }
+
+    .social-media .logo img {
+        width: 250px; /* Adjust for mobile screens */
+    }
+}

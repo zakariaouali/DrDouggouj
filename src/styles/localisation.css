@@ -1,0 +1,80 @@
+/* Overall styling for the localisation section */
+.localisation {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 80px;
+    border-radius: 20px;
+    width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.local {
+    width: 50%;
+}
+
+.local #cls {
+    color: red;
+}
+
+.local ul li {
+    font-size: 18px;
+    display: flex;
+}
+
+.local ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 0px;
+}
+
+.localisation h1 {
+    border-bottom: 3px solid #00bcd4;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.localisation iframe {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.localisation b {
+    width: 30%;
+    color: green;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .localisation {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .local {
+        width: 100%;  /* Full width for mobile */
+    }
+
+    .localisation h1 {
+        font-size: 24px; /* Reduce font size on mobile */
+        margin-left: 5%;
+    }
+
+    .localisation iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .local ul li {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    .local ul {
+        padding-left: 15px;
+    }
+}

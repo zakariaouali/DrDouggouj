@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.about {
+    margin-top: 10vh;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 10vh;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+}
+
+.intro p {
+    font-size: 17px;
+}
+
+.intro strong {
+    font-size: 20px;
+}
+
+.intro h1,
+#h2 {
+    border-bottom: 3px solid #00bcd4;
+    padding-bottom: 10px;
+    color: #333;
+    width: fit-content;
+}
+
+.aboutImg img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.aboutImg {
+    width: 40%;
+}
+.soft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.soft img {
+    margin-top: 0px;
+    width: 5%;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 50px;
+    align-items: center;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: white;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.stat:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.stat span {
+    color: black;
+    font-size: 50px;
+}
+
+.instat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .aboutImg {
+        width: 80%; /* Ensure image doesn't take up too much space */
+    }
+
+    .aboutImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro {
+        width: 90%; /* Use more of the screen width for text */
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .stat {
+        width: 80%; /* Adjust stat block width for mobile */
+    }
+
+    .soft img {
+        width: 10%; /* Adjust icon size */
+    }
+}
