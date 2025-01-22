@@ -42,7 +42,8 @@ export default function Hero() {
             initial='hidden'
             whileInView={"show"}
             viewport={{once:false,amount:0.3}}>
-                <img src="/images/welcome.png" alt="" />
+                <img src={`${process.env.PUBLIC_URL}/images/welcome.png`} alt="Logo" />
+
             </motion.article>
         </div>
     );

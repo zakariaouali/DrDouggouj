@@ -13,7 +13,7 @@ export default function About(){
              whileInView={"show"}
              viewport={{once:false,amount:0.3}}
              className="aboutImg">
-                <img src="/images/doctor.jpeg" alt="" />
+                <img src={`${process.env.PUBLIC_URL}/images/doctor.jpeg`} alt="Logo" />
             </motion.div>
             <motion.div 
              variants={FadeIn("down",0)}
@@ -32,7 +32,7 @@ export default function About(){
                 <div className="soft">
                         <h2 id="h2">Les Valeurs Fondamentales de Dr. Jihane</h2>
                     <div className="item">
-                        <img src="images/check-mark.png" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/check-mark.png`} alt="Logo" />
                         <p>
                            <strong>Approche Personnalisée :</strong> 
                             Chaque patient est unique. Dr. Jihane s'engage
@@ -41,7 +41,8 @@ export default function About(){
                         </p>
                     </div>
                     <div className="item">
-                        <img src="images/check-mark.png" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/check-mark.png`} alt="Logo" />
+
                         <p>
                            <strong>Compétence Multi-Disciplinaire :</strong> 
                            Avec une expertise dans de nombreuses 
@@ -50,7 +51,8 @@ export default function About(){
                         </p>
                     </div>
                     <div className="item">
-                        <img src="images/check-mark.png" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/check-mark.png`} alt="Logo" />
+
                         <p>
                            <strong>Méthodes Modernes et Naturelles :</strong> 
                            Que ce soit pour traiter des troubles médicaux 
@@ -60,7 +62,8 @@ export default function About(){
                         </p>
                     </div>
                     <div className="item">
-                        <img src="images/check-mark.png" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/check-mark.png`} alt="Logo" />
+
                         <p>
                            <strong>Écoute et Confiance : </strong> 
                            Dr. Jihane prend le temps de comprendre vos 

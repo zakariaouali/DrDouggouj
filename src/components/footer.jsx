@@ -10,7 +10,7 @@ export default function Footer() {
             </div>
             <div className="social-media">
                 <div className="logo">
-                    <img src="images/DrLogo.png" alt="Doctor Logo" />
+                <img src={`${process.env.PUBLIC_URL}/images/DrLogo.png`} alt="Logo" />
                 </div>
             </div>
             <div className="developer-credit">

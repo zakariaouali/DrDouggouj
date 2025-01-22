@@ -14,7 +14,8 @@ export default function Navbar() {
 
     return (
         <nav>
-            <a href="#"><img src="images/DrLogo.png" alt="Dr Logo" /></a>
+            <a href="#"><img src={`${process.env.PUBLIC_URL}/images/DrLogo.png`} alt="Logo" />
+            </a>
             <div className={`menu-icon ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu}>
                 <span></span>
                 <span></span>

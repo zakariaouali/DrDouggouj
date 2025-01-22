@@ -5,15 +5,15 @@ import { FadeIn } from '../motion';
 
 export default function Services() {
     const services = [
-        { id: 7, name: "Amincissement", description: "Programmes personnalisés pour la gestion du poids et l'amélioration de la silhouette, adaptés à vos objectifs.", categorie: "Beauté", photo: "images/services/aminicissement.jpg" },
-        { id: 2, name: "Diabétologue", description: "Prise en charge spécialisée des troubles liés au diabète, avec un suivi personnalisé pour chaque patient.", categorie: "Médical", photo: "images/services/diabétologue.jpg" },
-        { id: 3, name: "Nutritionniste", description: "Conseils nutritionnels adaptés à votre mode de vie et à vos besoins spécifiques pour une santé optimale.", categorie: "Santé", photo: "images/services/nutritionniste.webp" },
-        { id: 1, name: "Omnipraticienne", description: "Consultation générale pour tous vos besoins de santé. Dr. Jihane assure un suivi complet de votre bien-être.", categorie: "Médical", photo: "images/services/Omnipraticienne.jpeg" },
-        { id: 4, name: "Cupping thérapie", description: "Thérapie par ventouses visant à soulager les tensions musculaires et améliorer la circulation sanguine", categorie: "Thérapie", photo: "images/services/cup.webp" },
-        { id: 5, name: "Acupuncture", description: "Traitement basé sur la médecine traditionnelle chinoise pour soulager la douleur et rééquilibrer le corps", categorie: "Thérapie", photo: "images/services/cupping.webp" },
-        { id: 9, name: "Homéopathe", description: "Traitement homéopathique pour une approche douce et naturelle des troubles de santé variés.", categorie: "Thérapie", photo: "images/services/Homéopathe.jpg" },
-        { id: 6, name: "Esthéstique", description: "Soins de beauté, traitements de la peau, et conseils esthétiques pour améliorer votre apparence et votre bien-être.", categorie: "Beauté", photo: "images/services/esthetique.jpg" },
-        { id: 8, name: "Agréé pour le permis de conduire", description: "Évaluation médicale pour l’obtention ou le renouvellement du permis de conduire.", categorie: "Autres", photo: "images/services/permis.jpg" },
+        { id: 7, name: "Amincissement", description: "Programmes personnalisés pour la gestion du poids et l'amélioration de la silhouette, adaptés à vos objectifs.", categorie: "Beauté", photo:  `${process.env.PUBLIC_URL}/images/services/aminicissement.jpg` },
+        { id: 2, name: "Diabétologue", description: "Prise en charge spécialisée des troubles liés au diabète, avec un suivi personnalisé pour chaque patient.", categorie: "Médical", photo: `${process.env.PUBLIC_URL}/images/services/diabétologue.jpg` },
+        { id: 3, name: "Nutritionniste", description: "Conseils nutritionnels adaptés à votre mode de vie et à vos besoins spécifiques pour une santé optimale.", categorie: "Santé", photo: `${process.env.PUBLIC_URL}/images/services/nutritionniste.webp` },
+        { id: 1, name: "Omnipraticienne", description: "Consultation générale pour tous vos besoins de santé. Dr. Jihane assure un suivi complet de votre bien-être.", categorie: "Médical", photo: `${process.env.PUBLIC_URL}/images/services/Omnipraticienne.jpeg` },
+        { id: 4, name: "Cupping thérapie", description: "Thérapie par ventouses visant à soulager les tensions musculaires et améliorer la circulation sanguine", categorie: "Thérapie", photo: `${process.env.PUBLIC_URL}/images/services/cup.webp` },
+        { id: 5, name: "Acupuncture", description: "Traitement basé sur la médecine traditionnelle chinoise pour soulager la douleur et rééquilibrer le corps", categorie: "Thérapie", photo: `${process.env.PUBLIC_URL}/images/services/cupping.webp` },
+        { id: 9, name: "Homéopathe", description: "Traitement homéopathique pour une approche douce et naturelle des troubles de santé variés.", categorie: "Thérapie", photo: `${process.env.PUBLIC_URL}/images/services/homéopathe.jpg` },
+        { id: 6, name: "Esthéstique", description: "Soins de beauté, traitements de la peau, et conseils esthétiques pour améliorer votre apparence et votre bien-être.", categorie: "Beauté", photo: `${process.env.PUBLIC_URL}/images/services/esthetique.jpg` },
+        { id: 8, name: "Agréé pour le permis de conduire", description: "Évaluation médicale pour l’obtention ou le renouvellement du permis de conduire.", categorie: "Autres", photo: `${process.env.PUBLIC_URL}/images/services/permis.jpg` },
     ];
 
     const [visibleCount, setVisibleCount] = useState(3);
